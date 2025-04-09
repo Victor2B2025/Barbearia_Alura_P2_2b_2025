@@ -86,3 +86,21 @@ body{
 	width: 560px;
 	margin: 1em auto;
 }
+
+@media screen and(max-wdth: 480px){
+	,caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video
+	 widht: auto;
+}
+
+h1{
+
+	 text-align:center;
+}
+
+nav{
+	position: static;
+}
+
+.lista-beneficios, .imagem-beneficios{
+	width: 100%;
+}
