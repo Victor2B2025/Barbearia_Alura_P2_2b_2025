@@ -62,6 +62,13 @@ body{
 
 .imagem-beneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover{
+	opacity: 0.3;
 }
 
 .itens {
@@ -70,6 +77,10 @@ body{
 
 .itens:first-child{
 	font-weight: bold;
+}
+
+.itens::before{
+	content: "🪒"
 }
 
 .mapa {
@@ -88,12 +99,11 @@ body{
 }
 
 @media screen and(max-wdth: 480px){
-	,caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video
-	 widht: auto;
-}
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
 
-h1{
-
+    h1{
 	 text-align:center;
 }
 
@@ -104,3 +114,4 @@ nav{
 .lista-beneficios, .imagem-beneficios{
 	width: 100%;
 }
+
